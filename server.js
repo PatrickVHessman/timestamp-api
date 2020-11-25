@@ -44,6 +44,6 @@ app.get('/api/timestamp/:date', function (req, res) {
   res.send(dateObject)
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`App listening at http://localhost:${port}`)
 });
